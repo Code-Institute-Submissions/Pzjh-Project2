@@ -22,6 +22,17 @@ window.addEventListener('load', function() {
                 userWon = 0;
             }
         }
+        if (playUser === 'paper'){
+            if ((playComputer === 'rock') || (playComputer === 'spock')){
+                userWon = 1;
+            }
+            if ((playComputer === 'paper')){
+                userWon = 2;
+            }
+            if ((playComputer === 'scissor') || (playComputer === 'lizard')){
+                userWon = 0;
+            }
+        }
         if (playUser === 'scissor'){
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
                 userWon = 1;
@@ -33,7 +44,28 @@ window.addEventListener('load', function() {
                 userWon = 0;
             }
         }
-
+        if (playUser === 'lizard'){
+            if ((playComputer === 'paper') || (playComputer === 'spock')){
+                userWon = 1;
+            }
+            if ((playComputer === 'lizard')){
+                userWon = 2;
+            }
+            if ((playComputer === 'rock') || (playComputer === 'scissor')){
+                userWon = 0;
+            }
+        }
+        if (playUser === 'spock'){
+            if ((playComputer === 'scissor') || (playComputer === 'rock')){
+                userWon = 1;
+            }
+            if ((playComputer === 'spock')){
+                userWon = 2;
+            }
+            if ((playComputer === 'paper') || (playComputer === 'lizard')){
+                userWon = 0;
+            }
+        }
     }
 
     const playButtons = document.getElementsByClassName('choice-button');
