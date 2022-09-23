@@ -15,10 +15,13 @@ function userChoice() {
      }
 }
 
+/**Gets the computer asnwer */
 function compChoice() {
+    
 
 }
 
+/**Calculates the winner of the game */
 function calcWinner() {
 
 document.getElementById("rock").textContent = rock;
@@ -98,6 +101,12 @@ document.getElementById("spock").textContent = spock;
     }
 }
 
+/**Shows the winner of the game */
+function showResult() {
+
+}
+
+/**Keeps track of how many times in a row the User has won */
 function countScore() {
 
 }

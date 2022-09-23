@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .head-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .big-flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+  }
