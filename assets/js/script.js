@@ -110,3 +110,7 @@ function showResult() {
 function countScore() {
 
 }
+
+function saveOldScore() {
+    
+}

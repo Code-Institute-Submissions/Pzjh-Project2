@@ -12,4 +12,17 @@
     flex-wrap: nowrap;
     display: flex;
     justify-content: center;
+    flex: 100%
+  }
+
+  .scoreboard {
+    flex: 20%;
+  }
+
+  .game-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 80%;
+    flex-direction: column;
   }
