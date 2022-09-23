@@ -1,116 +1,43 @@
-window.addEventListener('load', ) {
+window.addEventListener('load', function() {
+    let userPlayed = '';
+    let userWon = 0; // 0 losses, 1 wins, 2 tie
 
-}
 
-
-function runGame() {
-
-}
-
-/** Gets the User answer */
-function getUserChoice() {
-
-    let choice = document.getElementsByClassName("choice"); {
-      
+    function userPlay(event){
+        userPlayed = event.target.getAttribute("data-play");
+        console.log(`User played ${userPlayed}`);
+        calculateWinner(userPlayed, 'rock');
+        console.log(`User won? ${userWon}`);
     }
-}
 
-/**Gets the computer answer */
-function getCompChoice() {
+    function calculateWinner(playUser, playComputer){
+        if (playUser === 'rock'){
+            if ((playComputer === 'scissor') || (playComputer === 'lizard')){
+                userWon = 1;
+            }
+            if ((playComputer === 'rock')){
+                userWon = 2;
+            }
+            if ((playComputer === 'paper') || (playComputer === 'spock')){
+                userWon = 0;
+            }
+        }
+        if (playUser === 'scissor'){
+            if ((playComputer === 'paper') || (playComputer === 'lizard')){
+                userWon = 1;
+            }
+            if ((playComputer === 'scissor')){
+                userWon = 2;
+            }
+            if ((playComputer === 'rock') || (playComputer === 'spock')){
+                userWon = 0;
+            }
+        }
 
-}
-
-/**Calculates the winner of the game */
-function calcWinner() {
-
-document.getElementById("rock");
-document.getElementById("paper");
-document.getElementById("scissor");
-document.getElementById("lizard");
-document.getElementById("spock");
-       
-    console.log()
-        if (userChoice === (compChoice)) {
-        console.log('Tie!');
-    } else if (userChoice === (rock)) {
-        if (compChoice === (paper)) {
-        console.log('You Lose!');
-    } else if (userChoice === (rock)) {
-        if (compChoice === (scissor))
-        console.log('You Win!');
-    } else if (userChoice === (rock)) {
-        if (compChoice === (lizard))
-        console.log('You Win!');
-    } else if (userChoice === (rock)) {
-        if (compChoice === (spock))
-        console.log('You Lose!');
     }
-    } else if (userChoice === (paper)) {
-        if (compChoice === (rock)) {
-        console.log('You Win!');
-    } else if (userChoice === (paper)) {
-        if (compChoice === (scissor))
-        console.log('You Lose!');
-    } else if (userChoice === (paper)) {
-        if (compChoice === (lizard))
-        console.log('You Lose!');
-    } else if (userChoice === (paper)) {
-        if (compChoice === (spock))
-        console.log('You Win!');
+
+    const playButtons = document.getElementsByClassName('choice-button');
+    for (let button of playButtons) {
+        button.addEventListener('click', userPlay);
     }
-    } else if (userChoice === (scissor)) {
-        if (compChoice === (rock)) {
-        console.log('You Lose!');
-    } else if (userChoice === (scissor)) {
-        if (compChoice === (paper))
-        console.log('You Win!');
-    } else if (userChoice === (scissor)) {
-        if (compChoice === (lizard))
-        console.log('You Win!');
-    } else if (userChoice === (scissor)) {
-        if (compChoice === (spock))
-        console.log('You Lose!');
-    }
-    } else if (userChoice === (lizard)) {
-        if (compChoice === (rock)) {
-        console.log('You Lose!');
-    } else if (userChoice === (lizard)) {
-        if (compChoice === (paper))
-        console.log('You Win!');
-    } else if (userChoice === (lizard)) {
-        if (compChoice === (scissor))
-        console.log('You Lose!');
-    } else if (userChoice === (lizard)) {
-        if (compChoice === (spock))
-        console.log('You Win!');
-    }
-    } else if (userChoice === (spock)) {
-        if (compChoice === (rock)) {
-        console.log('You Win!');
-    } else if (userChoice === (spock)) {
-        if (compChoice === (paper))
-        console.log('You Lose!');
-    } else if (userChoice === (spock)) {
-        if (compChoice === (scissor))
-        console.log('You Win!');
-    } else if (userChoice === (spock)) {
-        if (compChoice === (lizard))
-        console.log('You Lose!');
-    }
-    }
-}
-
-/**Shows the winner of the game */
-function showResult() {
-
-}
-
-/**Keeps track of how many times in a row the User has won */
-function countScore() {
-
-
-}
-
-function saveOldScore() {
-
-}
+});
