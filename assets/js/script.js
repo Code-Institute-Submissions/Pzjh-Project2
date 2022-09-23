@@ -1,34 +1,33 @@
+window.addEventListener('load', ) {
 
+}
 
 
 function runGame() {
-    document.addEventListener('DOMContentLoaded', function() {
-    
-    }
+
 }
 
 /** Gets the User answer */
-function userChoice() {
+function getUserChoice() {
 
-    Button.addEventListener('click', function() {
-     
-     }
+    let choice = document.getElementsByClassName("choice"); {
+      
+    }
 }
 
-/**Gets the computer asnwer */
-function compChoice() {
-    
+/**Gets the computer answer */
+function getCompChoice() {
 
 }
 
 /**Calculates the winner of the game */
 function calcWinner() {
 
-document.getElementById("rock").textContent = rock;
-document.getElementById("paper").textContent = paper;
-document.getElementById("scissor").textContent = scissor;
-document.getElementById("lizard").textContent = lizard;
-document.getElementById("spock").textContent = spock;
+document.getElementById("rock");
+document.getElementById("paper");
+document.getElementById("scissor");
+document.getElementById("lizard");
+document.getElementById("spock");
        
     console.log()
         if (userChoice === (compChoice)) {
@@ -109,8 +108,9 @@ function showResult() {
 /**Keeps track of how many times in a row the User has won */
 function countScore() {
 
+
 }
 
 function saveOldScore() {
-    
+
 }

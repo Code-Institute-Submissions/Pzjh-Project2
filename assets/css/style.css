@@ -8,10 +8,12 @@
   }
 
   .big-flex {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: 100%
   }
 
@@ -26,3 +28,13 @@
     flex: 80%;
     flex-direction: column;
   }
+
+  .result-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  

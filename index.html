@@ -12,13 +12,17 @@
     <div class="head-flex"><h1>header</h1></div>
 <div class="big-flex">
     <div class="game-box">
-        <div>result</div>
+        <div class="result hidden result-flex">
+            <div class="player-choice">left (Your Pick)</div>
+            <div><button id="again">Play Again!</button></div>
+            <div class="comp-choice">right (Comp pick)</div>
+        </div>
         <div class="flex-options">
-            <button class="choice" id="rock"><i class="fa-solid fa-hand-fist"></i></button>
-            <button class="choice" id="paper"><i class="fa-solid fa-hand"></i></button>
-            <button class="choice" id="scissor"><i class="fa-solid fa-hand-scissors"></i></button>
-            <button class="choice" id="lizard"><i class="fa-solid fa-hand-lizard"></i></button>
-            <button class="choice" id="spock"><i class="fa-solid fa-hand-spock"></i></button>
+            <button class="choice-button" id="rock"><i class="fa-solid fa-hand-fist"></i></button>
+            <button class="choice-button" id="paper"><i class="fa-solid fa-hand"></i></button>
+            <button class="choice-button" id="scissor"><i class="fa-solid fa-hand-scissors"></i></button>
+            <button class="choice-button" id="lizard"><i class="fa-solid fa-hand-lizard"></i></button>
+            <button class="choice-button" id="spock"><i class="fa-solid fa-hand-spock"></i></button>
         </div>
     </div>
     <div class="scoreboard">
@@ -29,9 +33,10 @@
         <p>user <span class="high-score">0</span></p>
         <p>user <span class="high-score">0</span></p>
         <h3>Curent score =</h3>
-        <p>User <span class="current-score">0</span></p>
+        <p>User <span class="score">0</span></p>
     </div>
 </div>
+<div><button class="rules">Rules</button></div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
