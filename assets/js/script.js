@@ -14,10 +14,6 @@ window.addEventListener('load', function() {
         console.log(`Computer played ${computerPlayed}`);
         calculateWinner(userPlayed, computerPlayed);
         console.log(`User won? ${userWon}`);
-        userScore(calculateWinner);
-        console.log(`score up? ${userScore}`);
-        compScore(calculateWinner);
-        console.log(`score up? ${compScore}`);
     }
 
     function computerPlay (){
@@ -44,71 +40,66 @@ window.addEventListener('load', function() {
         if (playUser === 'rock'){
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
                 userWon = 1;
-                resultDisplay.innerText = userWon;
+                userScore();
             }
             if ((playComputer === 'rock')){
                 userWon = 0;
-                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'paper') || (playComputer === 'spock')){
                 userWon = 2;
-                resultDisplay.innerText = userWon;
+                compScore();
             }
         }
         if (playUser === 'paper'){
             if ((playComputer === 'rock') || (playComputer === 'spock')){
                 userWon = 1;
-                resultDisplay.innerText = userWon;
+                userScore();
             }
             if ((playComputer === 'paper')){
                 userWon = 0;
-                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
                 userWon = 2;
-                resultDisplay.innerText = userWon;
+                compScore();
             }
         }
         if (playUser === 'scissor'){
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
                 userWon = 1;
-                resultDisplay.innerText = userWon;
+                userScore();
             }
             if ((playComputer === 'scissor')){
                 userWon = 0;
-                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'rock') || (playComputer === 'spock')){
                 userWon = 2;
-                resultDisplay.innerText = userWon;
+                compScore();
             }
         }
         if (playUser === 'lizard'){
             if ((playComputer === 'paper') || (playComputer === 'spock')){
                 userWon = 1;
-                resultDisplay.innerText = userWon;
+                userScore();
             }
             if ((playComputer === 'lizard')){
                 userWon = 0;
-                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'rock') || (playComputer === 'scissor')){
                 userWon = 2;
-                resultDisplay.innerText = userWon;
+                compScore();
             }
         }
         if (playUser === 'spock'){
             if ((playComputer === 'scissor') || (playComputer === 'rock')){
                 userWon = 1;
-                resultDisplay.innerText = userWon;
+                userScore();
             }
             if ((playComputer === 'spock')){
                 userWon = 0;
-                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
                 userWon = 2;
-                resultDisplay.innerText = userWon;
+                compScore();
             }
         }
     }
@@ -116,13 +107,13 @@ window.addEventListener('load', function() {
     
 
     function  userScore() {
-       let previousScore = parseint(document.getElementById('user-score').innerText);
-       document.getElementById('user-score').innerText = ++previousScore;
+        let oldScore = parseInt(document.getElementById('user-score').innerText);
+        document.getElementById('user-score').innerText = ++oldScore;
     }
 
     function compScore() {
-       let previousScore = parseint(document.getElementById('comp-score').innerText);
-       document.getElementById('comp-score').innerText = ++previousScore;
+        let oldScore = parseInt(document.getElementById('comp-score').innerText);
+        document.getElementById('comp-score').innerText = ++oldScore;
     }
 
     const playButtons = document.getElementsByClassName('choice-button');

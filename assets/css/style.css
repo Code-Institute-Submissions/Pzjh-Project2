@@ -9,6 +9,11 @@
   .head-flex {
     display: flex;
     justify-content: center;
+    margin-top: 3%;
+  }
+
+  .head-flex {
+    font-size: 160%;
   }
 
   .big-flex {
@@ -22,11 +27,12 @@
   }
 
   .scoreboard {
-    flex: 20%;
+    flex: 10%;
     height: 600px;
     border:8px solid black;
     border-radius: 15px;
     background-color: #BE83FF;
+    margin: 3% 15% 0 0
   }
 
   .scoreboard > p {
@@ -45,12 +51,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 60%;
+    flex: 40%;
     flex-direction: column;
     height: 600px; 
     border: 10px solid black;
     border-radius: 15px;
-    margin:0 2% 0 5%;
+    margin: 3% 2% 0 15%;
     background-color: #BE83FF;
   }
 
