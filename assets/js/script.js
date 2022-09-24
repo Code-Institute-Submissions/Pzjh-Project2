@@ -14,7 +14,10 @@ window.addEventListener('load', function() {
         console.log(`Computer played ${computerPlayed}`);
         calculateWinner(userPlayed, computerPlayed);
         console.log(`User won? ${userWon}`);
-        
+        userScore(calculateWinner);
+        console.log(`score up? ${userScore}`);
+        compScore(calculateWinner);
+        console.log(`score up? ${compScore}`);
     }
 
     function computerPlay (){
@@ -109,6 +112,8 @@ window.addEventListener('load', function() {
             }
         }
     }
+
+    
 
     function  userScore() {
        let previousScore = parseint(document.getElementById('user-score').innerText);

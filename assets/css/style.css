@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-color: #EE8E11;
+  }
+
   .head-flex {
     display: flex;
     justify-content: center;
@@ -20,17 +24,22 @@
   .scoreboard {
     flex: 20%;
     height: 600px;
+    border:8px solid black;
+    border-radius: 15px;
+    background-color: #BE83FF;
   }
 
   .game-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 80%;
+    flex: 60%;
     flex-direction: column;
     height: 600px; 
     border: 10px solid black;
     border-radius: 15px;
+    margin:0 2% 0 5%;
+    background-color: #BE83FF;
   }
 
   .result-flex {
@@ -62,6 +71,7 @@
     width: 17%;
     height: 75px;
     margin: 1%;
+    background-color: #00CABA;
   }
 
   .choice-button i {
