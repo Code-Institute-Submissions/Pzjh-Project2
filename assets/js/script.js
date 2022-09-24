@@ -124,4 +124,22 @@ window.addEventListener('load', function() {
     for (let button of playButtons) {
         button.addEventListener('click', userPlay);
     }
+
+    var btn = document.getElementById("rules");
+    var modal = document.getElementById("rules-modal");
+    var span = document.getElementsByClassName("close-modal")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
 });
