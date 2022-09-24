@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
         console.log(`User played ${userPlayed}`);
         computerPlay(computerPlay)
         console.log(`Computer played ${computerPlayed}`)
-        calculateWinner(userPlayed, 'rock');
+        calculateWinner(userPlayed, computerPlayed);
         console.log(`User won? ${userWon}`);
         
     }
@@ -41,62 +41,83 @@ window.addEventListener('load', function() {
         if (playUser === 'rock'){
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
                 userWon = 1;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'rock')){
                 userWon = 0;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'paper') || (playComputer === 'spock')){
                 userWon = 2;
+                resultDisplay.innerText = userWon;
             }
         }
         if (playUser === 'paper'){
             if ((playComputer === 'rock') || (playComputer === 'spock')){
                 userWon = 1;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'paper')){
                 userWon = 0;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
                 userWon = 2;
+                resultDisplay.innerText = userWon;
             }
         }
         if (playUser === 'scissor'){
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
                 userWon = 1;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'scissor')){
                 userWon = 0;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'rock') || (playComputer === 'spock')){
                 userWon = 2;
+                resultDisplay.innerText = userWon;
             }
         }
         if (playUser === 'lizard'){
             if ((playComputer === 'paper') || (playComputer === 'spock')){
                 userWon = 1;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'lizard')){
                 userWon = 0;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'rock') || (playComputer === 'scissor')){
                 userWon = 2;
+                resultDisplay.innerText = userWon;
             }
         }
         if (playUser === 'spock'){
             if ((playComputer === 'scissor') || (playComputer === 'rock')){
                 userWon = 1;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'spock')){
                 userWon = 0;
+                resultDisplay.innerText = userWon;
             }
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
                 userWon = 2;
+                resultDisplay.innerText = userWon;
             }
         }
     }
 
-    function  () {
-       
+    function  userScore() {
+       let previousScore = parseint(document.getElementById('user-score').innerText);
+       document.getElementById('user-score').innerText = ++previousScore;
+    }
+
+    function compScore() {
+       let previousScore = parseint(document.getElementById('comp-score').innerText);
+       document.getElementById('comp-score').innerText = ++previousScore;
     }
 
     const playButtons = document.getElementsByClassName('choice-button');
