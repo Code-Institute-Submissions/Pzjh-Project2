@@ -29,6 +29,18 @@
     background-color: #BE83FF;
   }
 
+  .scoreboard > p {
+    margin: 7% 0 3% 3%;
+    font-weight: bold;
+  }
+
+  .scoreboard > h2 {
+    margin: 3%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+  }
+
   .game-box {
     display: flex;
     justify-content: center;
@@ -50,7 +62,10 @@
     align-items: center;
     width: 80%;
     height: 300px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    /*
+    background-color: #006B5F;
+    */ 
   }
 
   .result-flex div {
@@ -78,6 +93,15 @@
     font-size: 200%;
   }
 
+  #rules {
+    background-color: #00CABA;
+    margin: 3% 0 0 3%;
+    font-size: 160%;
+    font-weight: bold; 
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
  .modal {
   display: none;
   position: fixed;
@@ -88,7 +112,7 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.6);
  }
 
  .modal-content {
@@ -100,18 +124,21 @@
  }
 
  .close-modal {
-  color: rgb(0, 0, 0);
+  color: black;
   float: right;
   font-size: 20px;
   font-weight: bold;
+  background-color: rgb(163, 13, 13);
+  padding: 5px;
+  
  }
-
+//*
  .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
+}*/
 
 #rules-img {
   margin: auto;
