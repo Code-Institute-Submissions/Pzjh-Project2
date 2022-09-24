@@ -1,8 +1,10 @@
 window.addEventListener('load', function() {
     let userPlayed = '';
     let computerPlayed = '';
-    let userWon = 0; // 0 losses, 1 wins, 2 tie
-    
+    let userWon = 0; // 2 losses, 1 wins, 0 tie
+    const computerChoiceDisplay = document.getElementById('comp-choice-display')
+    const playerChoiceDisplay = document.getElementById('player-choice-display')
+    const resultDisplay = document.getElementById('result-display')
     
 
     function userPlay(event){
@@ -41,10 +43,10 @@ window.addEventListener('load', function() {
                 userWon = 1;
             }
             if ((playComputer === 'rock')){
-                userWon = 2;
+                userWon = 0;
             }
             if ((playComputer === 'paper') || (playComputer === 'spock')){
-                userWon = 0;
+                userWon = 2;
             }
         }
         if (playUser === 'paper'){
@@ -52,10 +54,10 @@ window.addEventListener('load', function() {
                 userWon = 1;
             }
             if ((playComputer === 'paper')){
-                userWon = 2;
+                userWon = 0;
             }
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
-                userWon = 0;
+                userWon = 2;
             }
         }
         if (playUser === 'scissor'){
@@ -63,10 +65,10 @@ window.addEventListener('load', function() {
                 userWon = 1;
             }
             if ((playComputer === 'scissor')){
-                userWon = 2;
+                userWon = 0;
             }
             if ((playComputer === 'rock') || (playComputer === 'spock')){
-                userWon = 0;
+                userWon = 2;
             }
         }
         if (playUser === 'lizard'){
@@ -74,10 +76,10 @@ window.addEventListener('load', function() {
                 userWon = 1;
             }
             if ((playComputer === 'lizard')){
-                userWon = 2;
+                userWon = 0;
             }
             if ((playComputer === 'rock') || (playComputer === 'scissor')){
-                userWon = 0;
+                userWon = 2;
             }
         }
         if (playUser === 'spock'){
@@ -85,12 +87,16 @@ window.addEventListener('load', function() {
                 userWon = 1;
             }
             if ((playComputer === 'spock')){
-                userWon = 2;
-            }
-            if ((playComputer === 'paper') || (playComputer === 'lizard')){
                 userWon = 0;
             }
+            if ((playComputer === 'paper') || (playComputer === 'lizard')){
+                userWon = 2;
+            }
         }
+    }
+
+    function  () {
+       
     }
 
     const playButtons = document.getElementsByClassName('choice-button');
