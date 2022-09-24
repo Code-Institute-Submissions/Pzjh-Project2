@@ -1,13 +1,38 @@
 window.addEventListener('load', function() {
     let userPlayed = '';
+    let computerPlayed = '';
     let userWon = 0; // 0 losses, 1 wins, 2 tie
-
+    
+    
 
     function userPlay(event){
         userPlayed = event.target.getAttribute("data-play");
         console.log(`User played ${userPlayed}`);
+        computerPlay(computerPlay)
+        console.log(`Computer played ${computerPlayed}`)
         calculateWinner(userPlayed, 'rock');
         console.log(`User won? ${userWon}`);
+        
+    }
+
+    function computerPlay (){
+        const randomChoice = Math.floor(Math.random() * 5);
+        
+        if (randomChoice === 0) {
+            computerPlayed = 'rock'
+        }
+        if (randomChoice === 1) {
+            computerPlayed = 'paper'
+        }
+        if (randomChoice === 2) {
+            computerPlayed = 'scissor'
+        }
+        if (randomChoice === 3) {
+            computerPlayed = 'lizard'
+        }
+        if (randomChoice === 4) {
+            computerPlayed = 'spock'
+        }
     }
 
     function calculateWinner(playUser, playComputer){
