@@ -10,8 +10,8 @@ window.addEventListener('load', function() {
     function userPlay(event){
         userPlayed = event.target.getAttribute("data-play");
         console.log(`User played ${userPlayed}`);
-        computerPlay(computerPlay)
-        console.log(`Computer played ${computerPlayed}`)
+        computerPlay(computerPlay);
+        console.log(`Computer played ${computerPlayed}`);
         calculateWinner(userPlayed, computerPlayed);
         console.log(`User won? ${userWon}`);
         
