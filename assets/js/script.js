@@ -2,9 +2,9 @@ window.addEventListener('load', function() {
     let userPlayed;
     let computerPlayed;
     let userWon;
-    const computerChoiceDisplay = document.getElementById("comp-choice-display")
-    const playerChoiceDisplay = document.getElementById("player-choice-display")
-    const resultDisplay = document.getElementById("result-display")
+    const computerChoiceDisplay = document.getElementById("comp-choice-display");
+    const playerChoiceDisplay = document.getElementById("player-choice-display");
+    const resultDisplay = document.getElementById("result-display");
     
 
     /**
@@ -29,19 +29,19 @@ window.addEventListener('load', function() {
         const randomChoice = Math.floor(Math.random() * 5);
         
         if (randomChoice === 0) {
-            computerPlayed = 'rock'
+            computerPlayed = 'rock';
         }
         if (randomChoice === 1) {
-            computerPlayed = 'paper'
+            computerPlayed = 'paper';
         }
         if (randomChoice === 2) {
-            computerPlayed = 'scissor'
+            computerPlayed = 'scissor';
         }
         if (randomChoice === 3) {
-            computerPlayed = 'lizard'
+            computerPlayed = 'lizard';
         }
         if (randomChoice === 4) {
-            computerPlayed = 'spock'
+            computerPlayed = 'spock';
         }
     }
 
@@ -140,7 +140,7 @@ window.addEventListener('load', function() {
      * Resets the score when the user press the "Reset Score" button
      */
 
-    const resetscore = document.getElementById('reset').addEventListener('click', function () {
+    const resetScore = document.getElementById('reset').addEventListener('click', function () {
         document.getElementById('user-score').innerHTML = 0;
         document.getElementById('comp-score').innerHTML = 0;
     });
@@ -164,7 +164,7 @@ window.addEventListener('load', function() {
 
     btn.onclick = function() {
        modal.style.display = "block";
-    }
+    };
 
     /**
      * Closes modal
@@ -172,7 +172,7 @@ window.addEventListener('load', function() {
 
     span.onclick = function() {
        modal.style.display = "none";
-    }
+    };
 
     /**
      * Closes modal on user click outside of modal
@@ -182,5 +182,5 @@ window.addEventListener('load', function() {
     if (event.target == modal) {
        modal.style.display = "none";
      }
-    }
+    };
 });

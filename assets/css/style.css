@@ -160,16 +160,45 @@
   font-weight: bold;
   background-color: rgb(163, 13, 13);
   padding: 5px;
-  
- }
-//*
- .close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}*/
+}
 
 #rules-img {
   margin: auto;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 800px) {
+
+  .big-flex {
+    flex-direction: column-reverse;
+  }
+
+  .scoreboard {
+    width: 80%;
+    margin: 5% auto;
+  }
+  
+  .game-box {
+    width: 80%;
+    margin: 5% auto;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+   #rules-img {
+    max-width: 300px;
+    max-height: 250px;
+   }
+   .flex-options {
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .choice-button i {
+    font-size: 120%;
+   }
+  
 }
