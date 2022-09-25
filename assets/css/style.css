@@ -118,6 +118,15 @@
     border-radius: 15px;
   }
 
+  #reset {
+    background-color: #00CABA;
+    margin: 3% 0 0 0;
+    font-size: 160%;
+    font-weight: bold; 
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
  .modal {
   display: none;
   position: fixed;
@@ -137,6 +146,11 @@
   padding: 20px;
   border: none;
   width: 80%;
+ }
+
+ #rules-img {
+  max-width: 600px;
+  max-height: 500px;
  }
 
  .close-modal {
