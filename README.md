@@ -2,7 +2,7 @@
 
 ---
 
-[You can view the project here.]  
+[You can view the project here.](https://pzjh.github.io/Project2/)
 This is a game made with Java.Script. It is supposed to be a easy and realxing experience for the user.  
 
 ![Game on different devices](/assets/images/Readme.PNG "Game website")
