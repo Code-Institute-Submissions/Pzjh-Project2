@@ -1,108 +1,192 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Pzjh,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+# **The Rock, Paper, Scissors, Lizard, Spock Game**  
 
 ---
 
-Happy coding!
+[You can view the project here.]  
+This is a game made with Java.Script. It is supposed to be a easy and realxing experience for the user.  
+
+![Game on different devices](/assets/images/Readme.PNG "Game website")
+
+---
+
+## **(UX) User Experience**
+
+---
+
+- ### **User stories**  
+
+  - **First Time Visitor Goals** 
+    1. As a First Time Visitor, you are looking for a way to pass time and hope to find it here.
+    2. As a First Time Visitor, you want to quickly be able to get into the game and start.
+    3. As a First Time Visitor, you dont want to get tied up and be able to leave whenever u feel like it.  
+
+  - **Returning Visitor Goals**  
+    1. As a Returning Visitor, you want to keep playing the game and see if its something you can improve at 
+    or if its all just down to chance.
+    2. As a Returning Visitor, you want to feel like you can win.  
+
+  - **Frequent User Goals**  
+    1. As a Frequent User, you want to be able to beat your highscore.
+    2. As a Frequent User, you want to be able to save your scores.
+    3. As a Frequent User, you want different game-modes.  
+
+- ### **Design**  
+
+  - **Color Scheme**  
+    - There are three main colors that are used in this game and they are Orange, Lavender and Turquoise.  
+
+  - **Typography**  
+    - In this project we have been using the Indie Flower font as our main font on the entire site aswell as
+    Sans Serif as the back-up font if anything were to happen that would make the site unable to use the main
+    font. Indie Flower was picked because it looked playful which matched the websites general feel.  
+
+  - **Imagery**  
+    - The website doesn't really use many pictures or images but icons were used in the header and game buttons
+    to give it a feeling of simplicity. The rules are also shown as a picture to keep reading to a minimum
+    for maximum relaxation.  
+
+## **The Different Areas**  
+
+---
+
+### **The Header**  
+![Header](/assets/images/Header.PNG "Play Game!")
+
+It doesn't really serve a function more than to get you in the mood and make the page look a bit more fun!
+
+### **Rusult Board**  
+![Result](/assets/images/Resultarea.PNG "Shows you what is happening")
+
+Shows the player what is happening in the game and wheter they won or lost the previous round.
+
+
+### **Game Buttons**  
+![The Soul of the game](/assets/images/GameButtons.PNG "Buttons")
+
+This it where the player interacts with the game. The player picks one of the options and the 
+computer responds with a move of ite own.
+
+
+### **ScoreBoard**  
+![ScoreBoard](/assets/images/ScoreBoard.PNG "Keep the Score!")
+
+This is where the player will see if they are winning or losing since it will track how many rounds the player has won or lost.
+
+### **Rules and Reset Score Buttons**  
+![Buttons](/assets/images/Rulesreset.PNG "Rules/Reset")
+
+Rules button brings up an image showing which option beats which. Reset Score Button resets the scoreBoard for the current game.
+
+## **Features**  
+
+---
+
+- Interactive elements.  
+- Responsive on most device sizes.  
+
+## **Technologies Used**  
+
+---
+
+### **Languages Used**  
+
+- [HTML5](https://www.w3schools.com/html/default.asp).  
+- [CSS](https://www.w3schools.com/css/default.asp).  
+- [JavaScript](https://www.w3schools.com/js/default.asp).  
+
+### **Libraries & Programs Used**  
+
+1. [Google Fonts:](https://fonts.google.com/).
+  - Google fonts was used to get the Indie Flower font to all of the text in the game.
+2. [Font Awesome:](https://fontawesome.com/).
+  - Font Awesome was used to give our Play Buttons and header text some nice symbols to make them look awesome.
+3. [GitPod:](https://www.gitpod.io/).
+  - GitPod was used to make the project by letting us add code and then committing and push it from Git to GitHub.
+4. [GitHub:](https://github.com/).
+  - GitHub is used to store the project and all the code.
+5. [GitHub Pages:](https://pages.github.com/).
+  - Github Pages is used to give our project an actual website URL.  
+
+### **Coming Features**  
+- Making the score system able to keep track of High Scores.
+- giving you the option to Email your score to yourself or other person with the help of [emailJS](https://www.emailjs.com/).
+
+## **Testing**  
+
+---
+
+The W3C Markup Validator and W3C CSS Validator Services aswell as JShint was used to test all of the code in the project.  
+
+- [Markup Validator W3C:](https://validator.w3.org/).
+- [CSS Validator W3C:](https://jigsaw.w3.org/css-validator/#validate_by_input).
+- [JShint:](https://jshint.com/).
+
+### **Testing the User Experience (UX)**  
+
+- **First Time Visitor**  
+
+  1. As a First Time Visitor, you are looking for a way to pass time and hope to find it here.  
+      - When you enter the site there are only two options available for the user either start the game 
+  or look at the rules. Quick, easy and simple.
+  2. As a First Time Visitor, you want to quickly be able to get into the game and start.
+      - Just enter the site and press one of the buttons and you are good to go.
+  3. As a First Time Visitor, you dont want to get tied up and be able to leave whenever u feel like it.
+      - Whenever the user dont feel like playing anymore they can quit right there and then. No log off needed
+     just close the site and move on.  
+
+
+- **Returning Visitor**  
+
+  1. As a Returning Visitor, you want to keep playing the game and see if its something you can improve at 
+    or if its all just down to chance.  
+      - It's all random but the player should be able to keep busy for awhile.  
+  2. As a Returning Visitor, you want to feel like you can win.
+      - As of right now you win as long as you have more points than the computer when u decide u have had enough of the game.
+
+
+- **Frequent User Goals**  
+
+  1. As a Frequent User, you want to be able to beat your highscore.
+      - As of right now there is no such function in the game so the user would have to keep track of their high score themselves.
+  2. As a Frequent User, you want to be able to save your scores.
+      - As of right now that is not an option in this game.
+  3. As a Frequent User, you want different game-modes.
+      - As of right now there is only the infinite game mode.
+
+### **Further Testing**  
+
+- The website was tested on Google Chrome, Microsoft Edge and Samsung Internet Browser.
+- The website wa viewed Desktop, Samsung Galaxy21 and [Responsinator:](http://www.responsinator.com/).
+- The game has been tested extensively to make sure the buttons do what they are supposed to do and that 
+the computer actually picks an option at random.
+- Family members and friends were asked to help test the site to find bugs and other problems.
+
+### **Known Bugs**  
+
+- On the smallest of mobile devices some elements might dissapear.
+- On older browsers some elements might dissapear when they are shrunk.
+
+## **Deployment**  
+
+---
+
+### **GitHub Pages**
+
+The project was deployed to GitHub Pages. It was done using the following steps:
+
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the Master Branch.
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.  
+
+## **Credits**
+
+---
+
+### **Content**
+
+- The Icons used were taken from [Font Awesome](https://fontawesome.com/).
+- the code for the Modal was found on [w3schools](https://www.w3schools.com/) and then modified slightly to fit the project.
+
+### **Media**
+
+- The Image showing the rules was taken from [bigbangtheory.fandom.com](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
