@@ -1,19 +1,22 @@
 window.addEventListener('load', function() {
-    let userPlayed = '';
-    let computerPlayed = '';
-    let userWon = 0; // 2 losses, 1 wins, 0 tie
-    const computerChoiceDisplay = document.getElementById('comp-choice-display')
-    const playerChoiceDisplay = document.getElementById('player-choice-display')
-    const resultDisplay = document.getElementById('result-display')
+    let userPlayed;
+    let computerPlayed;
+    let userWon;
+    const computerChoiceDisplay = document.getElementById("comp-choice-display")
+    const playerChoiceDisplay = document.getElementById("player-choice-display")
+    const resultDisplay = document.getElementById("result-display")
     
 
     function userPlay(event){
         userPlayed = event.target.getAttribute("data-play");
         console.log(`User played ${userPlayed}`);
+        playerChoiceDisplay.innerHTML = userPlayed;
         computerPlay(computerPlay);
+        computerChoiceDisplay.innerHTML = computerPlayed;
         console.log(`Computer played ${computerPlayed}`);
         calculateWinner(userPlayed, computerPlayed);
-        console.log(`User won? ${userWon}`);
+        resultDisplay.innerHTML = userWon;
+        console.log(`You ${userWon}`);
     }
 
     function computerPlay (){
@@ -39,72 +42,71 @@ window.addEventListener('load', function() {
     function calculateWinner(playUser, playComputer){
         if (playUser === 'rock'){
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
-                userWon = 1;
+                userWon = 'You Won!';
                 userScore();
             }
             if ((playComputer === 'rock')){
-                userWon = 0;
+                userWon = 'You Tie!';
             }
             if ((playComputer === 'paper') || (playComputer === 'spock')){
-                userWon = 2;
+                userWon = 'You Lost!';
                 compScore();
             }
         }
         if (playUser === 'paper'){
             if ((playComputer === 'rock') || (playComputer === 'spock')){
-                userWon = 1;
+                userWon = 'You Won!';
                 userScore();
             }
             if ((playComputer === 'paper')){
-                userWon = 0;
+                userWon = 'You Tie!';
             }
             if ((playComputer === 'scissor') || (playComputer === 'lizard')){
-                userWon = 2;
+                userWon = 'You Lost!';
                 compScore();
             }
         }
         if (playUser === 'scissor'){
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
-                userWon = 1;
+                userWon = 'You Won!';
                 userScore();
             }
             if ((playComputer === 'scissor')){
-                userWon = 0;
+                userWon = 'You Tie!';
             }
             if ((playComputer === 'rock') || (playComputer === 'spock')){
-                userWon = 2;
+                userWon = 'You Lost!';
                 compScore();
             }
         }
         if (playUser === 'lizard'){
             if ((playComputer === 'paper') || (playComputer === 'spock')){
-                userWon = 1;
+                userWon = 'You Won!';
                 userScore();
             }
             if ((playComputer === 'lizard')){
-                userWon = 0;
+                userWon = 'You Tie!';
             }
             if ((playComputer === 'rock') || (playComputer === 'scissor')){
-                userWon = 2;
+                userWon = 'You Lost!';
                 compScore();
             }
         }
         if (playUser === 'spock'){
             if ((playComputer === 'scissor') || (playComputer === 'rock')){
-                userWon = 1;
+                userWon = 'You Won!';
                 userScore();
             }
             if ((playComputer === 'spock')){
-                userWon = 0;
+                userWon = 'You Tie!';
             }
             if ((playComputer === 'paper') || (playComputer === 'lizard')){
-                userWon = 2;
+                userWon = 'You Lost!';
                 compScore();
             }
         }
     }
 
-    
 
     function  userScore() {
         let oldScore = parseInt(document.getElementById('user-score').innerText);
